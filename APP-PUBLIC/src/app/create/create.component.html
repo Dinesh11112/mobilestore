@@ -1,0 +1,30 @@
+<h1>
+    Please Enter the Mobile Details
+</h1>
+<form (ngSubmit)="createNewMobile(newMobile)" action="../../index.html">
+    <table>
+        <tr>
+            <td><label for="name">Name of the Mobile</label></td>
+            <td><input [(ngModel)]="newMobile.name" id="name" name="name" required="required"></td>
+        </tr>
+        <tr>
+            <td><label for="type">Type of Mobile</label></td>
+            <td><input [(ngModel)]="newMobile.type" id="type" name="type" required="required"></td>
+        </tr>
+        <tr>
+            <td> <label for="latest">Latest Model</label></td>
+            <td><input [(ngModel)]="newMobile.latest" id="latest" name="latest"></td>
+        </tr>
+        <tr>
+            <td><label for="cost">Cost</label></td>
+            <td><input [(ngModel)]="newMobile.cost" id="cost" name="cost"></td>
+        </tr>
+        <tr>
+            <td><label for="rating">Rating</label></td>
+            <td><input [(ngModel)]="newMobile.rating" id="rating" name="rating"></td>
+        </tr>
+        <tr>
+            <td><button type="submit" >Create</button></td>
+        </tr>
+    </table>
+</form>

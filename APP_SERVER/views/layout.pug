@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    block scripts
+        script(src='/build/main.es5.js')
+        script(src='/build/polyfills.es5.js')
+        script(src='/build/runtime.es5.js')
+        script(src='/build/styles.es5.js')
+        script(src='/build/vendor.es5.js')
+        script(src='/build/main.es5.js')
+  //
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') My Mobile Store
+            ul.nav.navbar-nav
+              li
+                a(href='/list') Mobile List
+              li
+                a(href='/api/mobile') Display
+              li
+                a(href='/about') About
+            ul.navbar-right.nav.navbar-nav
+              li
+                a(href='#')
+                  span.glyphicon.glyphicon-user
+                  |  Sign Up
+              li
+                a(href='#')
+                  span.glyphicon.glyphicon-log-in
+                  |  Login
+  //
+    .test
+      block content
+
+      br
+      br
+      br
+    footer.container-fluid.bg-4.text-center
+      p
+        | 2020 @ copyright 
+        br
+        a(href='/') My Mobile Store

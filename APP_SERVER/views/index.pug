@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  #myCarousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel' data-slide-to='0')
+      li(data-target='#myCarousel' data-slide-to='1')
+      li(data-target='#myCarousel' data-slide-to='2')
+    .carousel-inner
+      .item.active
+        img(src='../images/img1.jpg' alt='Apple')
+      .item
+        img(src='../images/img2.jpg' alt='oneplus')
+      .item
+        img(src='../images/img3.jpg' alt='BlackBerry')
+    a.left.carousel-control(href='#myCarousel' data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel' data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
+      span.sr-only Next

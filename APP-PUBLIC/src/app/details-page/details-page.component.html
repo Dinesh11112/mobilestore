@@ -1,0 +1,37 @@
+<h1>
+    Details for the Mobile selected
+</h1>
+<app-header [content]="pageContent.header"></app-header>
+<table class="table">
+    <tr>
+        <td>Name : </td>
+        <td>{{newMobile.name }}</td>
+    </tr>
+    <tr>
+        <td>Type : </td>
+        <td>{{newMobile.type }}</td>
+    </tr>
+    <tr>
+        <td>Latest : </td>
+        <td>{{newMobile.latest}}</td>
+    </tr>
+    <tr>
+        <td>Cost : </td>
+        <td>{{newMobile.cost}}</td>
+    </tr>
+    <tr>
+        <td>Rating : </td>
+        <td>{{newMobile.rating}}</td>
+    </tr>
+    
+    <tr>
+        <td><a routerLink="/update/{{newMobile._id}}" action="update">Update</a></td>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </tr>
+    <tr>
+        <td><button (click)="deleteThisMobile(newMobile)">Delete</button></td>
+    </tr>
+</table>

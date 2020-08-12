@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  table
+    tr
+      td
+        label(for='Name') Mobile Name:
+      td
+        input(type='text', placeholder='Mobile Name' name='name')
+    tr
+      td
+        label(for='latest') Latest Version:
+      td
+        input(type='text', placeholder='Latest version' name='latest')
+    tr
+      td
+        label(for='cost') Cost of the Phone: 
+      td
+        input(type='text', placeholder='Mobile cost' name='cost')
+    tr
+      td
+        label(for='type') Type of mobile:
+      td
+        input(type='text', placeholder='Mobile type' name='type')
+    tr
+      td
+        label(for='rating') Rating:
+      td
+        input(type='text', placeholder='Mobile rating' name='rating')
+    tr
+      td
+        button(type='Submit', name='Submit') Submit

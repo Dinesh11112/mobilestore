@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  p="Mobile Name : "+currentMobile.name
+  p="Mobile Type : "+currentMobile.type
+  p="Latest Version : "+currentMobile.latest
+  p="Mobile Cost : "+currentMobile.cost
+  p="Rating : "+currentMobile.rating
+
+  a(href="/update") click here to modify

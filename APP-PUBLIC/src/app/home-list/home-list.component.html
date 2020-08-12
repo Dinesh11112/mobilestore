@@ -1,0 +1,10 @@
+<ul>
+    <div *ngFor="let mobile of mobiles">
+    <li>
+        <a routerLink="/mobile/{{mobile._id}}">{{mobile.name}}</a>
+        <p></p>
+    </li>
+</div>
+</ul>
+<button routerLink="/create">Add new Mobile to the Inventory</button>
+

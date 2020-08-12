@@ -1,0 +1,29 @@
+<h1>
+    Details for the Mobile selected
+</h1>
+<app-header [content]="pageContent.header"></app-header>
+<table class="table">
+    <tr>
+        <td>Name : </td>
+        <td><input [(ngModel)]="newMobile.name" placeholder="{{newMobile.name}}" id="name" name="name" required="required"></td>
+    </tr>
+    <tr>
+        <td>Type : </td>
+        <td><input [(ngModel)]="newMobile.type" placeholder="{{newMobile.type}}" id="type" name="type" required="required"></td>
+    </tr>
+    <tr>
+        <td>Latest : </td>
+        <td><input [(ngModel)]="newMobile.latest" placeholder="{{newMobile.latest}}" id="latest" name="latest"></td>
+    </tr>
+    <tr>
+        <td>Cost : </td>
+        <td><input [(ngModel)]="newMobile.cost" placeholder="{{newMobile.cost}}" id="cost" name="cost"></td>
+    </tr>
+    <tr>
+        <td>Rating : </td>
+        <td><input [(ngModel)]="newMobile.rating" placeholder="{{newMobile.rating}}" id="rating" name="rating"></td>
+    </tr>
+    <tr>
+        <td><button (click)="updateThisMobile(newMobile)">Update</button></td>
+    </tr>
+</table>

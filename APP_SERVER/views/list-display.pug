@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  app-home-list
+//  
+  h1= title
+  p Please click on the mobile to get the details
+  p
+   a(href="/new") Add New mobile
+  for mobile in mobiles
+    ul#list
+          .row
+              .col-xs-12
+                a(href="/mobile/"+mobile._id)=mobile.name
+  
+  
+  
+  
+  

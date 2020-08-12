@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  h3 Please give your details and enquery, We would reach you in no-time.
+  form
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-user
+      input#email.form-control(type='text' name='email' placeholder='Email')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-phone-alt
+      input#msg.form-control(type='numbre' name='number' placeholder='Comtact Number')
+    .input-group
+      span.input-group-addon
+        i.glyphicon.glyphicon-copy
+      input#msg.form-control(type='text' name='msg' placeholder='Additional Info')
+    .input-submit
+      input(type='button' value="Submit")
+  br
+  br
